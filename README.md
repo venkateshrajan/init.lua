@@ -5,7 +5,6 @@ Prerequisite: install [ripgrep](https://github.com/BurntSushi/ripgrep)
 
 ```bash
 git clone https://github.com/venkateshrajan/init.lua.git
-cd ./unix
 ./dev
 ```
 ---
