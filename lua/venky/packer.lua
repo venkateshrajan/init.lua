@@ -26,6 +26,8 @@ return require('packer').startup(function(use)
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
+  use('vim-airline/vim-airline')
+  use('vim-airline/vim-airline-themes')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -56,7 +58,7 @@ return require('packer').startup(function(use)
       run = function() vim.fn["mkdp#util#install"]() end,
   })
 
-  use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
+  -- use({ "iamcco/markdown-preview.nvim", run = "cd app && npm install", setup = function() vim.g.mkdp_filetypes = { "markdown" } end, ft = { "markdown" }, })
 
   use {
       'numToStr/Comment.nvim',
