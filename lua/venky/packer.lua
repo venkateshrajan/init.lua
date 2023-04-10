@@ -69,4 +69,20 @@ return require('packer').startup(function(use)
 
   use "p00f/nvim-ts-rainbow"
 
+  use({
+      "roobert/tailwindcss-colorizer-cmp.nvim",
+      -- optionally, override the default options:
+      config = function()
+          require("tailwindcss-colorizer-cmp").setup({
+              color_square_width = 2,
+          })
+      end
+  })
+
+  use ({
+      "prettier/vim-prettier", 
+      run = "yarn install --frozen-lockfile --production",
+      ft = {"javascript", "typescript", "css", "less", "scss", "json", "graphql", "markdown", "vue", "svelte", "yaml", "html"} 
+  })
+
 end)
