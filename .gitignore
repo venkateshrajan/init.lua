@@ -1,2 +1,3 @@
 ~/.vim/*
+plugin/packer_compiled.lua
 unix/plugin/packer_compiled.lua
